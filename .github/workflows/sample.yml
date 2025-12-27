@@ -1,0 +1,15 @@
+name:"deveops-paractice"
+
+on:
+  push:
+    branches:
+     -master
+
+jobs:
+  "hello world":
+   run-on:ubuntu-latest
+   steps:
+    -name:"Print hello world"
+     run:echo "Hello world"
+
+     
