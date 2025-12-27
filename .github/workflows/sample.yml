@@ -6,10 +6,10 @@ on:
      - master
 
 jobs:
-  "hello world":
-   runs-on:ubuntu-latest
+  "hello-world":
+   runs-on: ubuntu-latest
    steps:
-    -name:"Print hello world"
-     run:echo "Hello world"
+    - name:"Print hello world"
+      run:echo "Hello world"
 
      
