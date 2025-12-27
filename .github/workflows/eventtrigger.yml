@@ -11,8 +11,8 @@ on:
 jobs:
   "event pipeline":
    runs-on:  ubuntu-latest
-   steps: # steps to be executed in the job
-     name: "Running on master Push" #step 1
+   steps: 
+     name: "Running on master Push" 
      run : echo "Running on master push"
     
  
