@@ -1,13 +1,13 @@
-name:"deveops-paractice"
+name: "deveops-paractice"
 
 on:
   push:
     branches:
-     -master
+     - master
 
 jobs:
   "hello world":
-   run-on:ubuntu-latest
+   runs-on:ubuntu-latest
    steps:
     -name:"Print hello world"
      run:echo "Hello world"
