@@ -6,10 +6,15 @@ on:
       branches:
          - master
          - test
+
+  schedule: 
+    -  cron: "0 10 * * 2,4"
+
   pull_request:  # Event :Whenever a pull is made to the repository on the master branch
       branches:
         - master
         - test
+  
          
 
 jobs:
@@ -26,3 +31,10 @@ jobs:
         steps: 
             - name: "Running on master Push"
               run  :  echo "Running on master/test pull"
+
+  on-sechudle: 
+         if: github.event_name == 'schedule'
+         runs-on: ubuntu-latest
+         steps:
+           - name: "Running on sechudle time"
+             run: echo " Running At 10:00 on Tuesday and Thursday."
